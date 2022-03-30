@@ -365,10 +365,9 @@ input:checked + .slider:before {
 
 .sidebar_logo {
 background: #232530;
-  width: 240px;
+  width: 220px;
   position: fixed;
   margin-bottom: 15px;
-  border-bottom: 1px solid rgb(0, 0, 0);
 
 }
 
@@ -407,7 +406,6 @@ background: #232530;
   box-sizing: border-box;
   line-height: 46px;
   font-size: 16px;
-
   text-decoration: none;
   font-weight: 400;
   
@@ -490,17 +488,18 @@ label #close {
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
-
- 
   position: relative;
+  margin-left: 10px;
 }
 
 .sidebar li:hover {
   background: #5160ac;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .collapse-item-sidebar li a {
-  margin-left: -15px;
+  
   padding-left: 10px;
   border-bottom: 1px dotted lightgray;
   width: 90%;
@@ -725,7 +724,9 @@ label #close {
   color: rgb(255, 255, 255);
   z-index: 1;
   position: absolute;
-  margin-top: 103px;
+  margin-left: -175px;
+  margin-top: 20px;
+
 }
 
 
@@ -874,20 +875,16 @@ label #close {
 
 .side_Width_donunt{
   width: 20px;
-  height: 20px;
-  
+  height: 20px; 
   padding: 24px;
-
-  
   border-top: 40px solid rgb(16,150,24);
   border-left: 40px solid rgba(255, 0, 0, 0);
   border-top-left-radius: 200px;
-  
-  position: absolute;
-  margin-top: -105px;
-  margin-left: 210px;
-  transform: rotate(-96deg);
+  margin-top: -108px;
+  margin-left: 200px;
+  transform: rotate(-102deg);
   z-index: 1;
+  position: absolute;
 }
 
 
@@ -897,7 +894,7 @@ label #close {
   font-size: 14px;
   position: absolute;
   margin-top: -100px;
-  margin-left: 240px;
+  margin-left: 230px;
 }
 
 
