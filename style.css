@@ -640,6 +640,28 @@ label #close {
   margin-top: 1%;
   margin-left: 3%;
 }
+
+
+.chart{
+  width: 220px;
+  height: 220px;
+}
+.chartTwo{
+  width: 200px;
+  height: 200px;
+}
+.main-Charts .chart2{
+  width: 200px;
+  height: 200px;
+}
+
+.mychart2{
+  width: 200px;
+  height: 200px;
+}
+
+
+
 .charts_head {
   display: flex;
   display: block;
@@ -757,7 +779,7 @@ label #close {
   box-sizing: border-box;
   border-radius: 5px;
   margin-top: 20px;
-  height: 362px;
+  height: 391px;
 }
 .second_chart_head {
   display: flex;
@@ -856,42 +878,54 @@ label #close {
   font-family: 'Inter';
   color: white;
 }
+.mainDoughnut{
+  width: 300px;
+  height: 100%;
+ 
+  
+}
+
+.wrapperMaindoughnet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .donunt_chart{
- background-color: rgba(34, 37, 48, 1);
-    margin-top: 20px;
+  background-color: rgb(34,37,48);
+  margin-top: 20px;
   padding-top: 10px;
   padding-left: 9px;
   border-radius: 8px;
+  position: relative;
+  width: 100%;
+  min-height: 370px;
+ 
+ 
 }
 
-
-
-.side_Width_donunt{
+.side_Width_donunt {
   width: 28px;
   height: 36px;
-  padding: 22px;
-  border-top: 40px solid rgb(16, 150, 24);
+  padding: 36px;
+  border-top: 40px solid rgb(1,112,185);
   border-left: 40px solid rgba(255, 0, 0, 0);
   border-top-left-radius: 200px;
-  margin-left: 123px;
-  margin-top: -127px;
-  transform: rotate(-100deg);
+  margin-left: 94px;
+  margin-top: 130px;
+  transform: rotate(-118deg);
   z-index: 2;
   position: absolute;
 }
 
-
-.side_width_donut_bold{
-  color: rgb(255, 251, 251);
-  z-index: 3;
+.side_width_donut_bold {
+  color: rgb(255, 255, 255);
+  z-index: 333;
   font-size: 14px;
   position: absolute;
-  margin-top: -114px;
-  margin-left: 140px;
+  margin-top: 118px;
+  margin-left: 34px;
 }
-
-
-
 
 
 
@@ -1466,6 +1500,318 @@ font-size: 11px;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1991px) and (min-width:1601px) {
+  
+   
+  .chart{
+    width: 250px;
+    height: 250px;
+  }
+  .side_Width{
+    margin-left: -210px;
+    padding: 52px;
+    position: absolute;
+    margin-top: 45px;
+  }
+  
+  
+  
+   .side_width_bold{
+    z-index: 1;
+    position: absolute;
+    margin-left: -195px;
+    margin-top: 30px;
+   }
+  
+  
+   .mainDoughnut{
+    height: 348px;
+    width: 348px;
+  }
+  
+  .side_Width_donunt{
+    padding: 57px;
+    margin-left: 76px;
+    margin-top: 177px;
+  
+  }
+  .side_width_donut_bold{
+    margin-top: 147px;
+    margin-left: 6px;
+  }
+  .second_chart{
+    height: 390px;
+  }
+  
+  }
+  
+  
+  @media screen and (max-width:2200px) and (min-width:1992px) {
+    .chart{
+      width: 300px;
+     height: 300px;
+    }
+    .side_Width{
+      margin-left: -250px;
+      padding: 65px;
+      position: absolute;
+      margin-top: 50px;
+    }
+    
+    
+   .side_width_bold{
+    z-index: 1;
+    position: absolute;
+    margin-left: -225px;
+    margin-top: 30px;
+   }
+  
+    
+  
+  /* for doughnut */
+   .mainDoughnut{
+    width: 350px;
+    height: 100%;
+   
+    
+  }
+  
+    .side_Width_donunt{
+    padding: 57px;
+    margin-left: 76px;
+    margin-top: 185px;
+  
+  }
+  .side_width_donut_bold{
+    margin-top: 147px;
+    margin-left: 6px;
+  }
+  .second_chart{
+    height: 390px;
+  }
+    
+  }
+  
+  
+  @media screen and (max-width:2400px) and (min-width:2201px) {
+    .chart{
+      width: 350px;
+     height: 350px;
+    }
+    .side_Width{
+      margin-left: -280px;
+      padding: 75px;
+      position: absolute;
+      margin-top: 60px;
+    }
+    
+    
+    
+     .side_width_bold{
+      z-index: 1;
+      position: absolute;
+      margin-left: -250px;
+      margin-top: 30px;
+      font-size: 18px;
+     }
+  
+  
+  
+     
+  /* for doughnut */
+   .mainDoughnut{
+    width: 400px;
+    height: 100%;
+   
+    
+  }
+  
+    .side_Width_donunt{
+      padding: 69px;
+      margin-left: 61px;
+      margin-top: 218px;
+  
+  }
+  .side_width_donut_bold{
+    margin-top: 147px;
+    margin-left: 6px;
+  }
+  .second_chart{
+    height: 390px;
+  }
+     
+    
+  }
+  
+  @media screen and (max-width:2600px) and (min-width:2401px) {
+    .chart{
+      width: 350px;
+     height: 350px;
+    }
+    .side_Width{
+      margin-left: -280px;
+      padding: 75px;
+      position: absolute;
+      margin-top: 60px;
+    }
+    
+    
+    
+     .side_width_bold{
+      z-index: 1;
+      position: absolute;
+      margin-left: -250px;
+      margin-top: 30px;
+      font-size: 18px;
+     }
+  
+     .middleOfChart {
+      background-color: rgba(236, 236, 242, 1);
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      height: 50px;
+      padding: 35px;
+      position: absolute;
+      z-index: 1;
+      
+      
+    }
+    
+    .middleOfChart i {
+      position: absolute;
+      font-size: 28px;
+    }
+  
+  
+  
+    
+     
+  /* for doughnut */
+   .mainDoughnut{
+    width: 400px;
+    height: 100%;
+   
+    
+  }
+  
+    .side_Width_donunt{
+      padding: 70px;
+      margin-left: 68px;
+      margin-top: 215px;
+  
+  }
+  .side_width_donut_bold{
+    margin-top: 147px;
+    margin-left: 0px;
+  }
+  .second_chart{
+    height: 390px;
+  }
+     
+    
+    
+  }
+  
+  
+  @media screen and (max-width:3500px) and (min-width:2601px) {
+    .chart{
+      width: 400px;
+     height: 400px;
+    }
+    .side_Width{
+      margin-left: -320px;
+      padding: 88px;
+      position: absolute;
+      margin-top: 65px;
+    }
+    
+    
+    
+     .side_width_bold{
+      z-index: 1;
+      position: absolute;
+      margin-left: -290px;
+      margin-top: 30px;
+      font-size: 18px;
+     }
+  
+     .middleOfChart {
+      background-color: rgba(236, 236, 242, 1);
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      height: 50px;
+      padding: 35px;
+      position: absolute;
+      z-index: 1;
+      
+      
+    }
+    
+    .middleOfChart i {
+      position: absolute;
+      font-size: 28px;
+    }
+  
+  
+  
+    
+  /* for doughnut */
+  
+  
+  .wrapperMaindoughnet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+  }
+   .mainDoughnut{
+    width: 450px;
+    height: 100%;
+   
+    
+  }
+  
+    .side_Width_donunt{
+      padding: 86px;
+      margin-left: 54px;
+      margin-top: 249px;
+  
+  }
+  .side_width_donut_bold{
+    margin-top: 193px;
+    margin-left: -45px;
+  }
+  .second_chart{
+    height: 450px;
+  }
+     
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+
 
 
 

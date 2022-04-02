@@ -35,51 +35,7 @@
 
 
 
-  <!-- for charts -->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load("current", { packages: ["corechart"] });
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ["Task", "Hours per Day"],
-      ["Twitter " + "23%", 2],
-      ["Reddit " + "6%", 0.5],
-      ["Behance " + "20%", 0.5],
-      ["Dribble " + "40%", 0.5],
-      ["Youtube " + "23%", 0.5],
-      ["Facebook " + "6%", 0.5],
-      ["Teligram " + "5%", 0.5],
-      ["Instagram " + "16%", 1],
-      ["Discord " + "16%", 0.5],     
-      ["4Chan " + "20%", 2],
-     
-    ]);
-
-    var options = {
-      titleTextStyle: { fontSize: 12 },
-      pieSliceText: "label",
-      fontSize: 12,
-      pieHole: 0.4,
-     backgroundColor:'rgb(32,34,44)',
-      pieStartAngle: 100,
-      height:320,
-      width:350,
-      chartArea: { width: "400",height:'400' },
-      legend: {
-        position: "left",
-        maxLines: 1,
-        textStyle: { fontSize: 14,color: 'white', fontFamily:'roboto',fontWeight:700,},
-      },
-    };
-
-    var chart = new google.visualization.PieChart(
-      document.getElementById("donutchart")
-    );
-    chart.draw(data, options);
-  }
-</script>
-<!-- donut chart -->
+ 
 
 
 
@@ -290,10 +246,10 @@
     </select>
   </div>
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
      <div class="main-Charts">
-      <div class="chart1">
-        <canvas id="myChart1" width='200'height='200'> </canvas>
+      <div class="chart" >
+        <canvas id="myChart1" > </canvas>
       </div>
       
       <div class="middleOfChart">
@@ -307,10 +263,10 @@
     </div>
     </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
         <div class="main-Charts">
-      <div class="chart2">
-        <canvas id="chart2"  width='200'height='200' ></canvas>
+      <div class="chart"  >
+        <canvas id="chart2"  ></canvas>
       </div>
       <div class="middleOfChart">
         <img src="images/imoji1.png" alt="">
@@ -322,10 +278,10 @@
 
     </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
         <div class="main-Charts">
-      <div class="chart3" >
-        <canvas id="myChart3"  width='200'height='200'> </canvas>
+      <div class="chart" >
+        <canvas id="myChart3" > </canvas>
       </div>
       <div class="middleOfChart">
         <img src="./images/instragram.png" alt="" />
@@ -337,10 +293,10 @@
     </div>
     </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
         <div class="main-Charts">
-      <div class="chart4" >
-        <canvas id="myChart4" width='200'height='200'> </canvas>
+      <div class="chart" >
+        <canvas id="myChart4" > </canvas>
       </div>
       <div class="middleOfChart">
         <img src="images/Vector (3).png" alt=""  style="width: 10px;"/> <br><br>
@@ -356,10 +312,10 @@
 
   </div>
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
      <div class="main-Charts">
-      <div class="chart5">
-        <canvas id="myChart5"  width='200'height='200'> </canvas>
+      <div class="chart">
+        <canvas id="myChart5" > </canvas>
       </div>
       <div class="middleOfChart">
           <img src="images/facebook.png" alt="">
@@ -371,10 +327,10 @@
     </div>
     </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
         <div class="main-Charts">
-      <div class="chart6">
-        <canvas id="myChart6" width='200'height='200' ></canvas>
+      <div class="chart">
+        <canvas id="myChart6" ></canvas>
       </div>
       <div class="middleOfChart">
         <img src="images/youtube.png" alt="">
@@ -385,10 +341,10 @@
 
     </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
         <div class="main-Charts">
-      <div class="chart7">
-        <canvas id="myChart7"  width='200'height='200'> </canvas>
+      <div class="chart">
+        <canvas id="myChart7"  > </canvas>
       </div>
       <div class="middleOfChart">
        <img src="images/icons8-discord-50.png" alt="" style="width: 22px;">
@@ -400,10 +356,10 @@
     </div>
     </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-md-6">
         <div class="main-Charts">
-      <div class="chart8">
-        <canvas id="myChart8" width='200'height='200' > </canvas>
+      <div class="chart">
+        <canvas id="myChart8"  > </canvas>
       </div>
       <div class="middleOfChart">
         <img src="images/icons8-4chan-50.png" alt="" style="width: 22px;">
@@ -463,16 +419,24 @@
         <div class="donunt_chart_head">
           <h3>Overall Sentiment</h3>
         </div>
-        <div id="donutchart" ></div>
-      
+          
+        <div class="wrapperMaindoughnet">
   
-      <span class="side_Width_donunt">
-      </span>
-      <b class="side_width_donut_bold"> 16%</b>
-    </div>
+       
+          <div class="mainDoughnut">
+            <canvas id="doughnut"  > </canvas>
+          
+          </div>
+     
+        <span class="side_Width_donunt">
+        </span>
+        <b class="side_width_donut_bold"> 16%</b>
+  
+     </div>
+    
     </div>
 
-
+<!-- row div -->
   </div>
       
 </div>
@@ -906,49 +870,52 @@
 
 <script>
 
-
 const data= {
    
-    datasets: [{
-        label: '# of Votes',
-        data: [55,6,23,16],
-         label:'red',
-        backgroundColor: [
-            'rgb(1,112,185)',
-            'rgb(255,174,0)',
-            'rgb(81,96,172)',
-            'rgb(112,206,231)',
+   datasets: [{
+       label: '# of Votes',
+       data: [55,6,23,16],
+        label:'red',
+       backgroundColor: [
+           'rgb(1,112,185)',
+           'rgb(255,174,0)',
+           'rgb(81,96,172)',
+           'rgb(112,206,231)',
+          
            
-            
-        ],
-        borderColor: [
-        'rgb(1,112,185)',
-            'rgb(255,174,0)',
-            'rgb(81,96,172)',
-            'rgb(112,206,231)',
+       ],
+       borderColor: [
+       'rgb(1,112,185)',
+           'rgb(255,174,0)',
+           'rgb(81,96,172)',
+           'rgb(112,206,231)',
+          
            
-            
-        ],
-        borderWidth:30,
-        cutout:'95',
-        border:'200'
-    }]
+       ],
+     
+       cutout:'71',
+     
+   }]
 };
 
 // 1st config
 
 const config={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       Plugins:{
-           legend:{
-               display:false
-           }
-       }
-    }   
+   type: 'doughnut',
+   data,
+   options: {
+       responsive:true,
+       maintainAspectRatio:true,
+
+      Plugins:{
+       tooltips:{
+           display:false,
+         },
+        
+          
+
+      }
+   }   
 
 }
 // 1st chart 
@@ -960,19 +927,52 @@ config
 
 
 // chart 2
+const datatwo= {
+  
+  datasets: [{
+      label: '# of Votes',
+      data: [55,6,23,16],
+       label:'red',
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'71',
+    
+  }]
+};
 // config
 const config2={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       Plugins:{
-           legend:{
-               display:false
-           }
-       }
-    }   
+   type: 'doughnut',
+   data:datatwo,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      Plugins:{
+          legend:{
+              display:false
+          },
+         
+      
+
+          
+      },
+   
+
+   }   
 
 }
 
@@ -983,15 +983,42 @@ config2
 
 
 // chart 3
+const datathree= {
+  
+  datasets: [{
+      label: '# of Votes',
+      data: [55,6,23,16],
+       label:'red',
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'71',
+    
+  }]
+};
 // config
 const config3={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       
-    }   
+   type: 'doughnut',
+   data:datathree,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      
+   }   
 
 }
 
@@ -1003,15 +1030,42 @@ config3
 
 
 // chart 4
+const datafour= {
+  
+  datasets: [{
+      label: '# of Votes',
+      data: [55,6,23,16],
+       label:'red',
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'71',
+    
+  }]
+};
 // config
 const config4={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       
-    }   
+   type: 'doughnut',
+   data:datafour,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      
+   }   
 
 }
 
@@ -1026,16 +1080,42 @@ config4
 
 
 // second row item
-
+const datafive= {
+  
+  datasets: [{
+      label: '# of Votes',
+      data: [55,6,23,16],
+       label:'red',
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'71',
+    
+  }]
+};
 // config5
 const config5={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       
-    }   
+   type: 'doughnut',
+   data:datafive,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      
+   }   
 
 }
 // 1st chart 
@@ -1043,19 +1123,45 @@ const myChart5 = new Chart( document.getElementById('myChart5'),
 config5
 );
 
-// chart 2
+// chart 6
 
 
-
+const datasix= {
+  
+  datasets: [{
+      label: '# of Votes',
+      data: [55,6,23,16],
+       label:'red',
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'71',
+    
+  }]
+};
 // config
 const config6={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       
-    }   
+   type: 'doughnut',
+   data:datasix,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      
+   }   
 
 }
 
@@ -1065,16 +1171,43 @@ config6
 );
 
 
-// chart 3
+// chart 7
+const dataseven= {
+  
+  datasets: [{
+      label: '# of Votes',
+      data: [55,6,23,16],
+       label:'red',
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'71',
+    
+  }]
+};
 // config
 const config7={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       
-    }   
+   type: 'doughnut',
+   data:dataseven,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      
+   }   
 
 }
 
@@ -1085,23 +1218,115 @@ config7
 
 
 
-// chart 4
+// chart 8
+const dataeight= {
+  
+  datasets: [{
+      label: '# of Votes',
+      data: [55,6,23,16],
+       label:'red',
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'71',
+    
+  }]
+};
 // config
 const config8={
-    type: 'doughnut',
-    data,
-    options: {
-        responsive:false,
-        maintainAspectRatio:false,
-       
-    }   
+   type: 'doughnut',
+   data:dataeight,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      
+   }   
 
 }
+
 
 // data redering
 const myChart8= new Chart( document.getElementById('myChart8'),
 config8
 );
+
+
+
+// doughnut Chart
+const dataDoughnut= {
+ labels: ["Twitter 23%", "Reddit 6% ", 'Behance 20%',
+  'Dribble 40%', 'Youtube 5%', 'Facebook  16%','Teligram 5%','Instagram 5%','Discord 6%','4Chan 20%'],
+
+  datasets: [{
+      label: '# of Votes',
+      data: [23,6,20,40,23,6,5,5,16,20],
+       
+      backgroundColor: [
+          'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+      borderColor: [
+      'rgb(1,112,185)',
+          'rgb(255,174,0)',
+          'rgb(81,96,172)',
+          'rgb(112,206,231)',
+         
+          
+      ],
+    
+      cutout:'60',
+    
+  }]
+};
+// config
+const doughnutConfig={
+   type: 'doughnut',
+   data:dataDoughnut,
+   options: {
+       responsive:true,
+       maintainAspectRatio:false,
+      plugins:{
+        legend:{
+          position:'left',
+          align:'start',
+          fontSize:'14',
+          labels:{
+            pointStyle:'circle',
+            usePointStyle:true
+          }
+        }
+      }
+   }   
+
+}
+
+
+
+
+// data redering
+const doughnut= new Chart( document.getElementById('doughnut'),
+doughnutConfig
+);
+
+
 
 
 
