@@ -742,9 +742,13 @@ label #close {
   position: absolute;
   margin-left: -175px;
   margin-top: 20px;
-
+  display: none;
 }
 
+.side_Width:hover+.side_width_bold{
+    
+  display: block;
+}
 
 
 @media screen and (max-width:800px) {
@@ -916,6 +920,7 @@ label #close {
   transform: rotate(-118deg);
   z-index: 2;
   position: absolute;
+  display: none;
 }
 
 .side_width_donut_bold {
@@ -925,6 +930,7 @@ label #close {
   position: absolute;
   margin-top: 118px;
   margin-left: 34px;
+  display: none;
 }
 
 
@@ -1332,7 +1338,9 @@ box-sizing: border-box;
 
 
 
-
+.four_sec_secondPart_up table tbody tr td b{
+  font-size: 6px;
+}
 
 
 
@@ -1627,6 +1635,79 @@ font-size: 11px;
      }
   
   
+
+
+.four_sec_secondPart_up table {
+  font-size: 16px;
+
+}
+
+.table thead th {
+
+  font-size: 17px;
+}
+
+.four_sec_secondPart_up b {
+  font-size: 20px;
+font-family: "Inter";
+}
+
+
+.four_sec_fristPart {
+  min-height: 430px;
+
+}
+
+.four_sec_third_down {
+
+min-height: 213px;
+}
+
+.four_sec_third_down b {
+font-size: 20px;
+}
+
+
+.four_sec_third_down table thead tr th {
+  font-size: 18px;
+ 
+}
+
+.four_sec_third_down table tbody tr td {
+font-size: 16px;
+}
+
+.four_sec_third_down table tbody tr td b{
+font-size: 16px;
+}
+
+
+.third_sec_Ftable table thead tr th {
+
+font-size: 16px;
+}
+
+.third_secondSec_UpSite table thead tr th {
+font-size: 16px;
+
+}
+
+.third_secondSec_UpSite table tbody tr td {
+font-size: 13px;
+}
+.four_sec_secondPart_up table tbody tr td b{
+  font-size: 14px;
+}
+
+.third_sec_Down {
+  min-height: 162px;
+}
+
+.footer {
+
+margin-top: 23px;
+}
+
   
      
   /* for doughnut */
@@ -1698,6 +1779,80 @@ font-size: 11px;
   
   
   
+
+
+.four_sec_secondPart_up table {
+  font-size: 16px;
+
+}
+
+.table thead th {
+
+  font-size: 17px;
+}
+
+.four_sec_secondPart_up b {
+  font-size: 20px;
+font-family: "Inter";
+}
+
+
+.four_sec_fristPart {
+  min-height: 430px;
+
+}
+
+.four_sec_third_down {
+
+min-height: 213px;
+}
+
+.four_sec_third_down b {
+font-size: 20px;
+}
+
+
+.four_sec_third_down table thead tr th {
+  font-size: 18px;
+ 
+}
+
+.four_sec_third_down table tbody tr td {
+font-size: 16px;
+}
+
+.four_sec_third_down table tbody tr td b{
+font-size: 16px;
+}
+
+
+.third_sec_Ftable table thead tr th {
+
+font-size: 16px;
+}
+
+.third_secondSec_UpSite table thead tr th {
+font-size: 16px;
+
+}
+
+.third_secondSec_UpSite table tbody tr td {
+font-size: 13px;
+}
+
+.four_sec_secondPart_up table tbody tr td b{
+  font-size: 14px;
+}
+
+.third_sec_Down {
+  min-height: 162px;
+}
+
+.footer {
+
+margin-top: 23px;
+}
+
     
      
   /* for doughnut */
@@ -1770,6 +1925,80 @@ font-size: 11px;
     }
   
   
+
+
+.four_sec_secondPart_up table {
+  font-size: 16px;
+
+}
+
+.table thead th {
+
+  font-size: 17px;
+}
+
+.four_sec_secondPart_up b {
+  font-size: 20px;
+font-family: "Inter";
+}
+
+
+.four_sec_fristPart {
+  min-height: 430px;
+
+}
+
+.four_sec_third_down {
+
+min-height: 213px;
+}
+
+.four_sec_third_down b {
+font-size: 20px;
+}
+
+
+.four_sec_third_down table thead tr th {
+  font-size: 18px;
+ 
+}
+
+.four_sec_third_down table tbody tr td {
+font-size: 16px;
+}
+
+.four_sec_third_down table tbody tr td b{
+font-size: 16px;
+}
+
+
+.four_sec_secondPart_up table tbody tr td b{
+  font-size: 14px;
+}
+.third_sec_Ftable table thead tr th {
+
+font-size: 16px;
+}
+
+.third_secondSec_UpSite table thead tr th {
+font-size: 16px;
+
+}
+
+.third_secondSec_UpSite table tbody tr td {
+font-size: 13px;
+}
+
+
+.third_sec_Down {
+  min-height: 162px;
+}
+
+.footer {
+
+margin-top: 23px;
+}
+
   
     
   /* for doughnut */
