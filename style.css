@@ -381,7 +381,7 @@ background: #232530;
   position: relative;
 }
 
-.sidebar_ul li .sidebar_black_icons{
+/* .sidebar_ul li .sidebar_black_icons{
   margin-left: 20px;
   margin-right: 10px;
 }
@@ -397,7 +397,7 @@ background: #232530;
 }
 .sidebar_ul li:hover .sidebar_black_icons{
   display:none;
-}
+} */
 
 
 .sidebar ul li a {
@@ -408,9 +408,13 @@ background: #232530;
   font-size: 16px;
   text-decoration: none;
   font-weight: 400;
+  margin-left: 20px;
   
 }
-
+.iconify{
+  font-size: 17px;
+  top: 30px;  
+}
 
 .sidebar ul li:first-child {
   margin-top: 68px;
@@ -605,16 +609,21 @@ label #close {
 
 
 /* main-body-div */
-.main-body{
+/* main-body-div */
+.main-body {
   margin-left: 240px;
   margin-top: 90px;
 }
+
+.containerr {
+  margin: 30px;
+}
+
 @media screen and (max-width: 1220px) {
   .main-body {
     margin-left: 0px;
   }
 }
-
 
 
 /* dashboard charts styles start */
@@ -706,23 +715,26 @@ label #close {
   color: red;
 }
 
-.middleOfChart {
-  background-color: rgba(236, 236, 242, 1);
-  width: 60px;
+.middleOfCharts{
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  height: 60px;
-  padding: 35px;
+  width: 80px;
+  height: 80px;
   position: absolute;
- 
   z-index: 1;
+  background-color: rgb(235, 235, 235);
 }
 
-.middleOfChart i {
-  position: absolute;
+
+#middleIcon{
   font-size: 23px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .side_Width {
