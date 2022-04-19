@@ -404,7 +404,7 @@ background: #232530;
   color: #FFFFFF;
   width: 100%;
   box-sizing: border-box;
-  line-height: 46px;
+  line-height: 45px;
   font-size: 16px;
   text-decoration: none;
   font-weight: 400;
@@ -412,8 +412,10 @@ background: #232530;
   
 }
 .iconify{
-  font-size: 17px;
+  font-size: 23px;
   top: 30px;  
+  line-height: 4px;
+  margin-bottom: -5px;
 }
 
 .sidebar ul li:first-child {
