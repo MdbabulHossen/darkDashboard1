@@ -339,7 +339,7 @@ input:checked + .slider:before {
 .sidebar {
   height: 100vh;
   position: fixed;
-  background: linear-gradient(180deg, #232530 0%, rgba(34, 37, 48, 0) 100%);
+  background: #232530;
 
   width: 240px;
   transition-duration: 0.5s;
@@ -379,6 +379,7 @@ background: #232530;
 
 .sidebar_ul li{
   position: relative;
+  margin-bottom: 5px;
 }
 
 /* .sidebar_ul li .sidebar_black_icons{
@@ -473,7 +474,7 @@ label #bars {
   position: fixed;
   background: none;
   width: 50px;
-  color: black;
+  color: rgb(2, 2, 2);
   padding: 10px;
   font-size: 26px;
   z-index: 98;
@@ -532,6 +533,29 @@ label #close {
   border-radius: 5px;
   background: transparent;
 }
+/* Style the active class, and buttons on mouse-over */
+.active {
+  background: #5160ac;
+  color: rgb(0, 0, 0);
+ border-radius: 10px;
+} 
+
+.active::after{
+  content: "";
+  height: 20px;
+  width: 2px;
+  background: #000000;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border-radius: 5px;
+}
+
+.active a{
+  color: rgb(211, 52, 52);
+}
+
+
 
 .collapse-item-sidebar li a:hover {
   background: rgb(247, 240, 240);

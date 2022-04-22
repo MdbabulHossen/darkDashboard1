@@ -140,39 +140,39 @@
         <img src="images/headerLogo.png" alt="" />
       </div>
 
-      <ul class="sidebar_ul sidebar_ul_dark">
-        <li>
-          <a href="#"> <span class="iconify" data-icon="gg:browse"></span> Summary</a>
+      <ul class="sidebar_ul sidebar_ul_dark" id="myDIV">
+        <li class="nav_links active">
+          <a href="#" > <span class="iconify" data-icon="gg:browse"></span> Summary</a>
         </li>
 
-        <li>
+        <li class="nav_links">
           <a href="#"> <span class="iconify" data-icon="fluent:arrow-trending-lines-24-filled"></span> Trending</a>
         </li>
-        <li>
+        <li  class="nav_links">
           <a href="#"><span class="iconify" data-icon="fluent:document-text-clock-20-regular"
               data-flip="vertical"></span> Historical Data</a>
         </li>
-        <li>
+        <li  class="nav_links">
           <a href="#"> <span class="iconify" data-icon="uil:calendar-alt"></span> Watchlist</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"><span class="iconify" data-icon="gis:search-propertie"></span> Screener</a>
         </li>
-        <li style="margin-bottom:40px;">
+        <li style="margin-bottom:40px;" class="nav_links">
           <a href="#"><span class="iconify" data-icon="icon-park-outline:bell-ring"
               data-flip="horizontal,vertical"></span> API(Coming Soon)</a>
         </li>
         <p style="color: rgba(17, 33, 29, 0.5);margin-left: 30px;font-family: 'Inter';">In Depth:</p>
-        <li>
+        <li class="nav_links">
           <a href="#"><span class="iconify" data-icon="uil:twitter-alt"></span> Twitter</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"> <span class="iconify" data-icon="ps:reddit"></span> Reddit</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"> <span class="iconify" data-icon="akar-icons:instagram-fill"></span> Instagram</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"> 
             <svg class="blackIcon" width="12" height="20" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.0544286 23.4682C0.0544286 22.29 0.0544286 21.1642 0.0544286 20.0297C0.0544286 19.794 0.249312 19.7591 0.399904 19.6893C2.2513 18.7904 4.10269 17.9002 5.95408 17.0013C6.06038 16.9489 6.15782 16.8966 6.31727 16.8006C5.56432 16.4428 4.86451 16.1198 4.1647 15.7882C2.89796 15.1948 1.64007 14.5926 0.373329 14.0078C0.125295 13.8944 0.018995 13.7722 0.0278533 13.4929C0.04557 12.402 0.0367115 11.3198 0.0367115 10.1504C0.639079 10.4471 1.1883 10.7177 1.73751 10.9969C4.74049 12.5155 7.74347 14.0428 10.7464 15.5526C11.0122 15.6922 11.1362 15.8493 11.1185 16.1548C11.0919 16.6871 11.2779 17.3155 11.0565 17.7431C10.835 18.1708 10.1529 18.2929 9.67458 18.5373C6.56531 20.1431 3.46489 21.7489 0.355612 23.346C0.275887 23.3897 0.187304 23.4158 0.0544286 23.4682Z" fill="#11211D"/>
@@ -184,22 +184,22 @@
               </svg>
             Stocktwits</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"> <span class="iconify" data-icon="icon-park-outline:facebook"></span> Facebook</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"><span class="iconify" data-icon="iconoir:youtube"></span> Youtube</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"><span class="iconify" data-icon="ic:baseline-discord"></span> Discord</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"> <span class="iconify" data-icon="uit:telegram-alt"></span> Telegram</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"> <span class="iconify" data-icon="simple-icons:4chan"></span> 4Chan</a>
         </li>
-        <li>
+        <li class="nav_links">
           <a href="#"> <span class="iconify" data-icon="uil:newspaper"></span> News</a>
         </li>
       </ul>
@@ -1552,6 +1552,20 @@ configten
 
 </script>
   
-   
+<!-- for active class -->
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("nav_links");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
+
+
   </body>
 </html>
