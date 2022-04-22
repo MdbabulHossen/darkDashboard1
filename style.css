@@ -552,7 +552,7 @@ label #close {
 }
 
 .active a{
-  color: rgb(211, 52, 52);
+  color: rgb(0, 0, 0)!important;
 }
 
 
